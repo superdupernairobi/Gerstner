@@ -4,7 +4,7 @@ version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 license = "MIT"
-exclude = ["docs/**", "assets/**", "moonwave.toml", "rokit.toml"]
+exclude = ["build", "build/**", "docs/","docs/**", "assets", "assets/**", "moonwave.toml", "rokit.toml"]
 
 [dev-dependencies]
 TestEZ = "roblox/testez@^0.4.1"
