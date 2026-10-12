@@ -20,7 +20,7 @@ Gerstner = "superdupernairobi/gerstner@0.1.0"
 `prepare` validates your wave set and precomputes every per wave const, so the hot loop never calls `sqrt`
 
 ```lua
-local gerstner = require(path.to.gerstner)
+local gerstner = require(game.ReplicatedStorage.gerstner)
 
 local prepared = gerstner.prepare({
     { wavelength = 40, amplitude = 2, steepness = 0.5, direction = Vector2.new(1, 0) },

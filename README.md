@@ -14,7 +14,7 @@ Gerstner = "superdupernairobi/gerstner@0.1.0"
 ## Quickstart
 
 ```lua
-local gerstner = require(path.to.gerstner)
+local gerstner = require(game.ReplicatedStorage.gerstner)
 
 local prepared = gerstner.prepare({
     { wavelength = 40, amplitude = 2, steepness = 0.5, direction = Vector2.new(1, 0) },
