@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[225],{4410:e=>{e.exports=JSON.parse('{"sourceUrl":"https://github.com/superdupernairobi/Gerstner/blob/main","baseUrl":"/Gerstner/","classOrder":[],"apiCategories":[]}')}}]);
