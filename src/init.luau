@@ -63,48 +63,48 @@ export type Gerstner = {
 ]=]
 const function prepare(waves: { Wave }): Prepared
 	local count = #waves
-	
+
 	if count == 0 then
 		error("gerstner.prepare: needs at least one wave")
 	end
-	
+
 	const prepared: { PreparedWave } = {}
 	local steepnessSum = 0
-	
+
 	for i, wave in waves do
 		const wavelength = wave.wavelength
 		const amplitude = wave.amplitude
 		const steepness = wave.steepness
-		
+
 		if wavelength <= 0 then
 			error(`gerstner.prepare: wave {i} wavelength must be greater than 0`)
 		end
-		
+
 		if amplitude <= 0 then
 			error(`gerstner.prepare: wave {i} amplitude must be greater than 0`)
 		end
-		
+
 		if steepness < 0 or steepness > 1 then
 			error(`gerstner.prepare: wave {i} steepness must be between 0 and 1`)
 		end
-		
+
 		const direction = wave.direction
 		const length = direction.Magnitude
-		
+
 		if length == 0 then
 			error(`gerstner.prepare: wave {i} direction must not be zero`)
 		end
-		
+
 		const dirX = direction.X / length
 		const dirY = direction.Y / length
-		
+
 		const k = 2 * math.pi / wavelength
 		const omega = math.sqrt(G * k)
-		
+
 		const q = steepness / (k * amplitude * count)
-		
-		steepnessSum += steepness	
-		
+
+		steepnessSum += steepness
+
 		prepared[i] = {
 			kx = k * dirX,
 			kz = k * dirY,
@@ -114,7 +114,7 @@ const function prepare(waves: { Wave }): Prepared
 			a = amplitude,
 		}
 	end
-	
+
 	return {
 		waves = prepared,
 		steepness = steepnessSum / count,
@@ -136,16 +136,16 @@ end
 ]=]
 const function displace(prepared: Prepared, x: number, z: number, t: number): Vector3
 	local dx, dy, dz = 0, 0, 0
-	
+
 	for _, wave in prepared.waves do
 		const phase = wave.kx * x + wave.kz * z - wave.omega * t
 		const c = math.cos(phase)
-		
+
 		dx += wave.xa * c
 		dz += wave.za * c
 		dy += wave.a * math.sin(phase)
 	end
-	
+
 	return Vector3.new(x + dx, dy, z + dz)
 end
 
