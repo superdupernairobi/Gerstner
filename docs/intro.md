@@ -12,7 +12,7 @@ Gerstner is only math. No instances or services or states. So it runs on the ser
 
 ```toml
 [dependencies]
-Gerstner = "superdupernairobi/gerstner@0.1.0" | `@0.1.1` (or use `@0.1`)
+Gerstner = "superdupernairobi/gerstner@0.1.1"
 ```
 
 ## Prepare once, displace a lot
