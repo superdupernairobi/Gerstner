@@ -1,6 +1,6 @@
 ![Gerstner logo](assets/logo.png)
 ![Animated Gerstner ocean surface](docs/wave.gif)
-<--moonwave-hide-before-this-line-->
+<!--moonwave-hide-before-this-line-->
 # Gerstner
 
 Pure Gerstner wave displacement for Roblox. One module and no Instances, no states. It takes wave definitions and returns surface positions.
