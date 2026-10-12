@@ -1,6 +1,5 @@
 # Changelog
 
-```markdown
 ## 0.1.1
 
 - Added `description` and `authors` to the wally package
