@@ -1,0 +1,13 @@
+gitSourceBranch = "main"
+gitRepoUrl = "https://github.com/superdupernairobi/Gerstner"
+
+[docusaurus]
+organizationName = "superdupernairobi"
+projectName = "Gerstner"
+url = "https://superdupernairobi.github.io"
+baseUrl = "/Gerstner/"
+favicon = "/favicon.png"
+
+[navbar.logo]
+src = "/logo.png"
+alt = "Gerstner logo"
