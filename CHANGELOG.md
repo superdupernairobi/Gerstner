@@ -1,5 +1,12 @@
 # Changelog
 
+```markdown
+## 0.1.1
+
+- Added `description` and `authors` to the wally package
+- Trimmed the package archive: `build/` output is no longer included, and the empty `docs/` is gone
+- Documentation: API references, getting started and an editable mesh example
+
 ## 0.1.0
 
 Initial release:
