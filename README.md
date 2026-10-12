@@ -11,7 +11,7 @@ Wally:
 
 ```toml
 [dependencies]
-Gerstner = "superdupernairobi/gerstner@0.1.0" | `@0.1.1` (or use `@0.1`)
+Gerstner = "superdupernairobi/gerstner@0.1.1"
 ```
 
 ## Quickstart
