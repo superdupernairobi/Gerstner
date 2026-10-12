@@ -12,7 +12,6 @@ A minimal animated ocean built on `gerstner` using `EditableMesh`, this is the c
 ## Before you start
 
 - **This must run on the client!** `EditableMesh` does not replicate, a server built mesh renders on the server ONLY. The client receives an unusable `Object`, put the script in a `LocalScript`
-- **EditableMesh is gated.** In a published experience it fails until you are 13+ age verigied and have enabled **Allow Mesh / Image APIs** in Game Settings > Security, it works in studio without this
 
 ## The script
 
