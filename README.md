@@ -1,3 +1,5 @@
+![Gerstner logo](/assets/logo.png)
+
 # Gerstner
 
 Pure Gerstner wave displacement for Roblox. One module and no Instances, no states. It takes wave definitions and returns surface positions.
